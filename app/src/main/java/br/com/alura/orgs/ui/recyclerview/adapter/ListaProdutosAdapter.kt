@@ -7,23 +7,25 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.alura.orgs.R
+import br.com.alura.orgs.databinding.ProdutoItemBinding
 import br.com.alura.orgs.model.Produto
 
 class ListaProdutosAdapter(
-        private val context: Context,
-        produtos: List<Produto>
+    private val context: Context,
+    produtos: List<Produto>
 ) : RecyclerView.Adapter<ListaProdutosAdapter.ViewHolder>() {
 
     private val produtos = produtos.toMutableList()
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    class ViewHolder(private val binding: ProdutoItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
 
         fun vincula(produto: Produto) {
-            val nome = itemView.findViewById<TextView>(R.id.produto_item_nome)
+            val nome = binding.produtoItemNome
             nome.text = produto.nome
-            val descricao = itemView.findViewById<TextView>(R.id.produto_item_descricao)
+            val descricao = binding.produtoItemDescricao
             descricao.text = produto.descricao
-            val valor = itemView.findViewById<TextView>(R.id.produto_item_valor)
+            val valor = binding.produtoItemValor
             valor.text = produto.valor.toPlainString()
         }
 
@@ -31,8 +33,8 @@ class ListaProdutosAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(context)
-        val view = inflater.inflate(R.layout.produto_item, parent, false)
-        return ViewHolder(view)
+        val binding = ProdutoItemBinding.inflate(inflater, parent, false)
+        return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
