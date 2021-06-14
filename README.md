@@ -1,3 +1,4 @@
+![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
 ## Funcionalidades do projeto
 
 O App lista produtos com imagem, título, descrição e valor. Também, é possível cadastrar produtos. Todo armazenamento é mantido em memória do App, portanto, ao finalizar o App as informações são perdidas.
