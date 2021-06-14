@@ -10,7 +10,7 @@ O App lista produtos com imagem, título, descrição e valor. Também, é poss�
 
 ![](img/amostra.gif)
 
-### ✔️ Técnicas e tecnologias utilizadas
+## ✔️ Técnicas e tecnologias utilizadas
 
 As técnicas e tecnologias utilizadas pra isso são:
 
