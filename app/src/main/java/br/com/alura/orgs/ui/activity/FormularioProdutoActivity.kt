@@ -1,7 +1,9 @@
 package br.com.alura.orgs.ui.activity
 
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import br.com.alura.orgs.R
 import br.com.alura.orgs.dao.ProdutosDao
 import br.com.alura.orgs.databinding.ActivityFormularioProdutoBinding
 import br.com.alura.orgs.model.Produto
@@ -17,6 +19,17 @@ class FormularioProdutoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         configuraBotaoSalvar()
+        binding.activityFormularioProdutoImagem.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setView(R.layout.formulario_imagem)
+                .setPositiveButton("Confirmar") { _, _ ->
+
+                }
+                .setNegativeButton("Cancelar") { _, _ ->
+
+                }
+                .show()
+        }
     }
 
     private fun configuraBotaoSalvar() {
