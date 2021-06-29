@@ -48,4 +48,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation "io.coil-kt:coil:1.2.2"
+    implementation "io.coil-kt:coil-gif:1.2.2"
 }
