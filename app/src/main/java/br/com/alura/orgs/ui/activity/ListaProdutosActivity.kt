@@ -25,9 +25,6 @@ class ListaProdutosActivity : AppCompatActivity() {
         setContentView(binding.root)
         configuraRecyclerView()
         configuraFab()
-        FormularioImagemDialog(this).mostra { imagem ->
-            Log.i("ListaProdutosActivity", "onCreate: $imagem")
-        }
     }
 
     override fun onResume() {
