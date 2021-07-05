@@ -15,4 +15,11 @@
 
         <item name="android:fontFamily">@font/montserrat</item>
     </style>
+
+    <!-- Criação de estilo baseado no estilo original do Orgs -->
+    <style name="Theme.Orgs.NoActionBar" parent="Theme.Orgs">
+        <!-- Remoção da App bar para o estilo -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
