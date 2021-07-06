@@ -27,6 +27,14 @@ As técnicas e tecnologias utilizadas pra isso são:
 - `Extension functions`: adicionar comportamentos em outras classes para reutilizá-los
 - `Personalização de tema`: modificação de cores para o tema do App
 
+## 🎯 Desafio
+
+Tela de detalhes do produto
+
+![orgs-desafio-detalhes](https://user-images.githubusercontent.com/8989346/124600562-3a743e00-de3d-11eb-9d45-15e8a8d2976f.gif)
+
+[Você pode conferir o resultado do desafio neste commit](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/commit/edf2764877c663d96370f65b41840ca0b47fc8d6).
+
 ## 📁 Acesso ao projeto
 
 Você pode [acessar o código fonte do projeto inicial](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/tree/projeto-inicial) ou [baixá-lo](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/archive/refs/heads/projeto-inicial.zip).
