@@ -20,8 +20,6 @@ class DetalhesProdutoActivity : AppCompatActivity() {
     }
 
     private fun tentaCarregarProduto() {
-        // tentativa de buscar o produto se ele existir,
-        // caso contrário, finalizar a Activity
         intent.getParcelableExtra<Produto>(CHAVE_PRODUTO)?.let { produtoCarregado ->
             preencheCampos(produtoCarregado)
         } ?: finish()

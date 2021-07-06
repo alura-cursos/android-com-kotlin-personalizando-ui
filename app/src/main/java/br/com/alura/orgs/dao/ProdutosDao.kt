@@ -15,7 +15,6 @@ class ProdutosDao {
 
     companion object {
         private val produtos = mutableListOf<Produto>(
-            // adição de produtos padrões para teste de cenários diferentes
             Produto(
                 nome = "Salada de frutas",
                 descricao = "Laranja, maçãs e uva",
