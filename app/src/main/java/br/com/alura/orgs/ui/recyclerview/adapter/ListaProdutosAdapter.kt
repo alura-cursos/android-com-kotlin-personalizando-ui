@@ -1,30 +1,42 @@
 package br.com.alura.orgs.ui.recyclerview.adapter
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import br.com.alura.orgs.R
 import br.com.alura.orgs.databinding.ProdutoItemBinding
 import br.com.alura.orgs.extensions.tentaCarregarImagem
 import br.com.alura.orgs.model.Produto
-import coil.load
 import java.math.BigDecimal
 import java.text.NumberFormat
 import java.util.*
 
 class ListaProdutosAdapter(
     private val context: Context,
-    produtos: List<Produto>
+    produtos: List<Produto>,
+    var quandoClicaNoItemListener: (produto: Produto) -> Unit = {}
 ) : RecyclerView.Adapter<ListaProdutosAdapter.ViewHolder>() {
 
     private val produtos = produtos.toMutableList()
 
-    class ViewHolder(private val binding: ProdutoItemBinding) :
+    inner class ViewHolder(private val binding: ProdutoItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        private lateinit var produto: Produto
+
+        init {
+            itemView.setOnClickListener {
+                Log.i("ListaProdutosAdapter", "clicando no item")
+                if(::produto.isInitialized) {
+                    quandoClicaNoItemListener(produto)
+                }
+            }
+        }
+
         fun vincula(produto: Produto) {
+            this.produto = produto
             val nome = binding.produtoItemNome
             nome.text = produto.nome
             val descricao = binding.produtoItemDescricao
@@ -34,7 +46,7 @@ class ListaProdutosAdapter(
                 formataParaMoedaBrasileira(produto.valor)
             valor.text = valorEmMoeda
 
-            val visibilidade = if(produto.imagem != null){
+            val visibilidade = if (produto.imagem != null) {
                 View.VISIBLE
             } else {
                 View.GONE
