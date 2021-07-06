@@ -33,7 +33,7 @@ Tela de detalhes do produto
 
 ![orgs-desafio-detalhes](https://user-images.githubusercontent.com/8989346/124600562-3a743e00-de3d-11eb-9d45-15e8a8d2976f.gif)
 
-[Você pode conferir o resultado do desafio neste commit](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/commit/edf2764877c663d96370f65b41840ca0b47fc8d6).
+[Você pode conferir o resultado do desafio neste commit](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/commit/3188f27a627592715e7de62b6da450696e401f18).
 
 ## 📁 Acesso ao projeto
 
