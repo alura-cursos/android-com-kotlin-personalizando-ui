@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Orgs">
         <activity android:name=".ui.activity.FormularioProdutoActivity" />
-        <activity android:name=".ui.activity.ListaProdutosActivity">
+        <activity
+            android:name=".ui.activity.ListaProdutosActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
