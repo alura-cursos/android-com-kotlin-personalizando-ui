@@ -48,3 +48,7 @@ Após baixar o projeto, você pode abrir com o Android Studio. Para isso, na tel
 - Por fim clique em OK
 
 O Android Studio deve executar algumas tasks do Gradle para configurar o projeto, aguarde até finalizar. Ao finalizar as tasks, você pode executar o App 🏆 
+
+## 📚 Mais informações do curso
+
+Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br/course/android-kotlin-personalize-app) que desenvolve o projeto desde o começo!
